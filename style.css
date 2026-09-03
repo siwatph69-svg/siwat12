@@ -16,7 +16,7 @@ body {
 .profile-card {
     background-color: #FFFFFF; /* สีรอง (สีพื้นหลังการ์ด) */
     width: 100%;
-    max-width: 450px;           /* ป้องกันไม่ให้กว้างเกินไปบนจอใหญ่ */
+    max-width: 480px;           /* ปรับขนาดการ์ดให้รองรับเนื้อหา */
     padding: 30px;
     border-radius: 15px;       /* ทำขอบมน */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ดูมีมิติ */
@@ -65,8 +65,14 @@ ul {
 }
 
 li {
-    margin-bottom: 5px;
-    font-size: 15px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ตกแต่งรายการส่วนสิ่งที่ได้เรียนรู้ */
+.learn-list li {
+    margin-bottom: 8px;
 }
 
 /* ส่วนรูป Profile */
@@ -95,11 +101,11 @@ li {
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มความนุ่มนวลเวลา Hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* เอฟเฟกต์เมื่อเอา Mouse ไปวางบนปุ่ม (Hover) */
 .btn:hover {
     background-color: #3f5f1a;  /* เปลี่ยนสีให้สว่างขึ้นเล็กน้อย */
-    transform: translateY(-2px); /* ปรับขนาด/ตำแหน่งให้ยกตัวขึ้นเล็กน้อย */
+    transform: translateY(-2px); /* ยกตัวขึ้นเล็กน้อย */
 }
