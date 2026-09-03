@@ -1,0 +1,105 @@
+/* ตั้งค่าพื้นฐานของเว็บไซต์ (ธีม Nature) */
+body {
+    background-color: #81A181; /* สีพื้นหลังหลัก */
+    color: #5C6155;            /* สีตัวอักษรทั่วไป */
+    font-family: 'Prompt', sans-serif; /* ฟอนต์สไตล์ Modern */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* ตกแต่ง Profile Card ตรงกลาง */
+.profile-card {
+    background-color: #FFFFFF; /* สีรอง (สีพื้นหลังการ์ด) */
+    width: 100%;
+    max-width: 450px;           /* ป้องกันไม่ให้กว้างเกินไปบนจอใหญ่ */
+    padding: 30px;
+    border-radius: 15px;       /* ทำขอบมน */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ดูมีมิติ */
+    text-align: center;
+}
+
+/* ตกแต่งข้อความหัวข้อ */
+h1 {
+    color: #000000;            /* สีหลัก */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #2B4211;            /* ใช้สีปุ่มเน้นหัวข้อรอง */
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #81A181;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* ตกแต่งข้อความทั่วไปและข้อความต้อนรับ */
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 8px 0;
+}
+
+.welcome-text {
+    font-weight: 600;
+    color: #2B4211;
+}
+
+/* จัดรูปแบบกลุ่มข้อมูลเกี่ยวกับฉัน */
+.info-group {
+    text-align: left;
+}
+
+/* ตกแต่งรายการ (List) */
+ul {
+    text-align: left;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+/* ส่วนรูป Profile */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;         /* ทำเป็นรูปวงกลม */
+    object-fit: cover;
+    border: 4px solid #81A181;   /* ใส่ขอบรูป */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ใส่เงา */
+    margin-bottom: 15px;
+}
+
+/* ตกแต่งปุ่มกด */
+.button-container {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2B4211;  /* สีปุ่ม */
+    color: #FFFFFF;             /* ตัวอักษรบนปุ่ม */
+    padding: 12px 24px;
+    border-radius: 25px;        /* ทำปุ่มขอบมน */
+    text-decoration: none;      /* ลบเส้นใต้ลิงก์ */
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มความนุ่มนวลเวลา Hover */
+}
+
+/* เอฟเฟกต์เมื่อเอา Mouse ไปวางบนปุ่ม (Hover) */
+.btn:hover {
+    background-color: #3f5f1a;  /* เปลี่ยนสีให้สว่างขึ้นเล็กน้อย */
+    transform: translateY(-2px); /* ปรับขนาด/ตำแหน่งให้ยกตัวขึ้นเล็กน้อย */
+}
